@@ -1,0 +1,81 @@
+                          Angular-front end technology             
+                          ------------------------------
+
+                                   Basic Commands
+                                   -----------------
+
+
+                    1.creation of angular project-ng new project-name   
+
+                    2.to runangular project -ng serve
+
+                    3.component creation -ng g c component-name
+
+                    4.service creation - ng g s servic-name
+
+
+
+                                    Basic Component
+                                    ----------------
+
+
+
+                    1.Module -To import 3rd party library - root module(defaultly)-AppModule
+
+                    2.Components -html,css,ts
+
+                    3.To set up path for component -App Routing module file
+
+                    4.routing-outlet selector (show user request html page to browser) 
+
+                    5.Angular Service(for api calling or service calling)   
+
+                    6.Dependency Injection(data share in angular) it perform always inside constuctor(here we use constructor only for dependency injection)
+                                          syntax: access-specifier(public/private/protect) object-name:dependent class-name
+
+
+                    7.asynchronous -rxjs -observable(typescript resolve asynchronous function) - here resolve by using subscribe instead of then(here expect a call back function)      
+
+
+                8.Data Binding -sharing data inside a component   
+
+                      8.1 One way Binding 
+
+                         8.1.1 component(ts file) to view(html)
+
+                             8.1.1.1 String Interpolation(ts file defined variable wnt to show in html file, variabl name define in double{{}}) -{{variable-name}}
+
+                             8.1.1.2 property Binding -[attribute]="property-name" (proprty define in ts can see in html as attribute)
+
+                         8.1.2 view to component
+
+                             8.1.2.1 Event Binding -(event)="function-call" ---(html file) (fuction definition ts file) html to ts binding
+                             8.1.2.2 Event Binding using $event-(event)="function-call($event)
+                             8.1.2.3 Template Reference Variable
+
+                      8.2 Two Way Binding 
+
+                         8.2.1 ngModel (Template Driven Forms-first design html file so it in driven forms)   
+
+                           - FormsModule(we have to import FormsModule)  [(ngModule)]="variable-name" 
+                           -ngSubmit - apply it in form tag ,(ngSubmit)="fuction call" 
+
+
+                9. Angular Directive -to manipulate DOM
+
+                    9.1 Component Directive
+
+                    9.2 Structural Direactive -if we want to add or remove new html elements in dom based any condition  we use structural directive  ,it is preceeded by * sign
+
+                        9.2.1  *ngIf="condition" - (for providing condition ,it is in any html element)  
+
+                        9.2.2  *ngFor="let variable-name of array-name"     
+                          
+                
+                10. ActivatedRoute -provides access to information about a route assocciated with a component
+
+                11.Router  class -use navigateByUrl()  to navigate one page another using ts
+
+
+                12. pipe-to convert user input to another format
+                                      
